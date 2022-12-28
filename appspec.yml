@@ -10,7 +10,7 @@ files:
 
 hooks:
   BeforeInstall:
-    - location: scripts/install.sh
+    - location: scripts/before_install.sh
       timeout: 300
       runas: aadesh
   ApplicationStop:
