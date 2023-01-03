@@ -2,7 +2,7 @@
 version: 0.2
 env:
   parameter-store:
-    mongo_url: /aadesh/mongo_url
+    mongo_url: /adi/mongo_url
 phases:
   pre_build:
     commands:
