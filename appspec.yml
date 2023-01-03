@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
-runas: aadesh
+runas: root
 
 files:
   - source: /
-    destination: /home/aadesh/node-express-realworld-example-app
+    destination: /home/ubuntu/node-express-realworld-example-app
     overwrite: true
     timeout: 300
 
@@ -12,16 +12,15 @@ hooks:
   BeforeInstall:
     - location: scripts/before_install.sh
       timeout: 300
-      runas: aadesh
+     
   ApplicationStop:
     - location: scripts/stop_script.sh
       timeout: 300
-      runas: aadesh
+      
   ApplicationStart:
     - location: scripts/start_script.sh
       timeout: 300
-      runas: aadesh
+     
   ValidateService:
     - location: scripts/validate_service.sh
       timeout: 300
-      runas: aadesh
