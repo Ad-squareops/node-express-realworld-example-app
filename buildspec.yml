@@ -12,7 +12,7 @@ phases:
       - echo "MONGODB_URI=$mongo_url" > .env
       - cat .env
       - ls -al
-      - sed -i 's|mongodb://localhost/conduit|'$mongo_url'|' app.js
+      
   post_build:
     commands:
       - cat app.js
