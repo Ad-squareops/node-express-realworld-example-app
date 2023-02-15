@@ -7,7 +7,6 @@ files:
     destination: /home/ubuntu/node-express-realworld-example-app
 file_exists_behavior: OVERWRITE
     
-
 hooks:
   ApplicationStop:
     - location: scripts/stop_script.sh
