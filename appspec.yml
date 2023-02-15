@@ -1,6 +1,6 @@
 version: 0.0
 os: linux
-runas: ubuntu
+runas: root
 
 files:
   - source: /
@@ -11,12 +11,12 @@ hooks:
   BeforeInstall:
     - location: scripts/before_install.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
   ApplicationStop:
     - location: scripts/stop_script.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
   ApplicationStart:
     - location: scripts/start_script.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
