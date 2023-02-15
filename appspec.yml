@@ -1,6 +1,6 @@
 version: 0.0
 os: linux
-runas: ubuntu
+runas: root
 
 files:
   - source: /
@@ -9,9 +9,10 @@ file_exists_behavior: OVERWRITE
     
 
 hooks:
-  
   ApplicationStop:
     - location: scripts/stop_script.sh
       timeout: 300
       
- 
+  ApplicationStart:
+    - location: scripts/start_script.sh
+      timeout: 300
