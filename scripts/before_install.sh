@@ -1,3 +1,4 @@
 #!/bin/bash
-
-echo "Get a backup if you want, before the new deployment ride!!!"
+echo "Update Server before Work"
+apt update 
+echo "Server Updated"
